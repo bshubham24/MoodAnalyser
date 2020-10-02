@@ -8,8 +8,8 @@ public class MoodAnalyserTest {
 
 	@Test
 	public void givenMessage_WhenSad_ShouldReturnSad() {
-		MoodAnalyser moodAnalyser = new MoodAnalyser();
-		String mood = moodAnalyser.analyseMood("I am in any Mood");
+		MoodAnalyser moodAnalyser = new MoodAnalyser("I am in any Mood");
+		String mood = moodAnalyser.analyseMood();
 		assertEquals("HAPPY", mood);
 	}
 
