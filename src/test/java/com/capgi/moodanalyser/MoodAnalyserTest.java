@@ -7,10 +7,10 @@ import org.junit.Test;
 public class MoodAnalyserTest {
 
 	@Test
-	public void givenMessage_WhenNull_ShouldReturnNull() {
+	public void givenMessage_WhenNull_ShouldReturnHappy() {
 		MoodAnalyser moodAnalyser = new MoodAnalyser(null);
 		String mood = moodAnalyser.analyseMood();
-		assertEquals("NULL", mood);
+		assertEquals("HAPPY", mood);
 	}
 
 }
