@@ -10,8 +10,8 @@ public class MoodAnalyser {
 		message = message.toLowerCase();
 		if (message.contains("sad"))
 			return "SAD";
-
-		return null;
+		else
+			return "HAPPY";
 
 	}
 
