@@ -10,6 +10,10 @@ public class MoodAnalyser {
 
 	public String analyseMood() throws MoodAnalysisException {
 		try {
+			if (message.length() == 0) {
+				throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_EMPTY,
+						"mood shouldn't be empty");
+			}
 
 			if (message.toLowerCase().contains("happy"))
 				return "HAPPY";
